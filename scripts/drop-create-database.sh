@@ -5,3 +5,5 @@ set -e
 
 sudo docker exec -it postgres psql -f /mnt/schema-drop-postgresql.sql -U egor -d fusiondb
 sudo docker exec -it postgres psql -f /mnt/schema-postgresql.sql -U egor -d fusiondb
+sudo docker exec -it postgres psql -f /mnt/schema-drop-billing-data.sql -U egor -d fusiondb
+sudo docker exec -it postgres psql -f /mnt/schema-billing.sql -U egor -d fusiondb
